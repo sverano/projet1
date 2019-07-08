@@ -1,0 +1,36 @@
+{% include "pages/licence/layout.html" %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Historique Algorithmique</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pages.css') }}" />
+	</head>
+	
+	<body style="background-color:#E6E6FA">
+
+		<h1>Algorithmique</h1>
+         <form action="" method="post">
+  			<div>
+				<input id="bt" type="submit" value="Ajouter un émargement"/>
+			</div>
+	     <p>historique</p>
+
+<table border="1" id="tr">
+<tr>
+<th><select id="td"><option value="">Date</option><option value=""></option></select></th>
+<th><select id="td"><option value="">leçons</option><option value=""></option></select></th>
+<th><select id="td"><option value="">Absents</option><option value=""></option></select></th>
+</tr>
+{% for cns in ligne %}
+<tr>						
+<td>{{cns[0]}}</td>
+<td>{{cns[1]}}</td>
+<td>{{cns[2]}}</td>
+</tr>
+{% endfor %}
+</table>
+</form>
+	</body>
+</html>

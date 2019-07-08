@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<title>Emargement Algorithmique</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A simple jQuery datepicker plugin.">
+  <meta name="author" content="Chen Fengyuan">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/datepicker.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/emg.css') }}" />
+	</head>
+<style type="text/css">
+     .p0{
+    margin-left: 50px;
+    padding: 15px 10px;
+    margin-top: 20px;
+    }
+    .d1{
+    margin-left: 60px;
+    padding: 15px 1px;
+    margin-top: -30px;
+    }
+    .container{
+    margin-left: 10px;
+    padding: 1px 100px;
+    margin-top: -80px;
+  
+    }
+    .t1{
+    margin-left: 150px;
+    padding: 5px 10px;
+    margin-top: -20px;
+    }
+
+    .txt{
+    margin-left: 50px;
+    padding: 10px 10px;
+    margin-top: -20px;
+    }
+
+       .tst{
+    margin-left: 50px;
+    padding: 10px 10px;
+    margin-top: 30px;
+    }
+
+
+    .p2{
+    margin-left: 50px;
+    padding:15px 10px;
+    margin-top: -40px;
+    }
+    .p3{
+    margin-left: 50px;
+    padding: 15px 10px;
+    margin-top: -40px;
+    }
+    .all{
+    margin-left: auto;
+    margin-right: auto;
+ 
+    }
+
+    .enr{
+      width: 125px;
+      height: 38px;
+      border-radius:.25rem;
+      border: 1px;
+      background-color: #6658dd;
+      border-color:6658dd;
+      color: #fff; 
+      }
+
+       .ann{
+      width: 100px;
+      height: 38px;
+      border-radius:.25rem;
+      border: 1px;
+      background-color: #f1556c;
+          border-color: #f1556c;
+
+      color: #fff; 
+      }
+
+      .b2{
+        margin-top: -43px;
+        margin-left: 250px;
+      }
+</style>
+	<body style="background-color:#E6E6FA">
+    
+    <form action="" method="post">
+      <div class="all">
+
+        <div class="p0">
+          <p>Nouveau émargement</p>
+        </div>
+		  
+       <div class="d1">
+         <p>Date :</p>
+       </div>
+       <form  method="post">
+      <div class="container">
+    <h1 class="page-header"></h1>
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <h3 class="page-header"></h3>
+        <div class="docs-datepicker">
+          <div class="input-group">
+            <input type="text" class="form-control docs-date" name="dates" placeholder="Pick a date">
+            <div class="input-group-append">
+              <button  type="button" class="btn btn-outline-secondary docs-datepicker-trigger" disabled>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="docs-datepicker-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://fengyuanchen.github.io/shared/google-analytics.js"></script>
+  <script src="/static/js/datepicker.js"></script>
+  <script src="/static/js/datepicker.fr-FR.js"></script>
+  <script src="/static/js/main.js"></script>
+
+        <div class="tst">
+          <p>leçons du jour :</p>
+        </div>
+       <div class="p2">
+         
+          <textarea name="lecons" rows="2" cols="50"></textarea><br>
+
+      </div>
+
+      <div class="txt">
+         <p>Absents :</p>
+      </div>
+
+      <div class="p3">
+       
+          <textarea  name="absents"rows="2" cols="50"></textarea><br>
+     
+      </div>
+
+
+        		<div class="t1">
+            <input type="submit" value="Enregistrement" class="enr" />
+           
+            </div>
+   
+      </div >
+    </form >
+    <form method="post" action="/home">
+      <dir class="b2">
+      <button  type="submit" href="/home" class="ann">Annuler</button>
+    </dir>
+    </form>
+     
+	</body>
+</htmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

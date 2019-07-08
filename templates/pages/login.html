@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>e-Emmargement</title>
+</head>
+<style type="text/css">
+	 * {
+box-sizing: border-box;
+}
+
+*:focus {
+outline: none;
+}
+body {
+font-family: Arial;
+background-color: #3498DB;
+padding: 50px;
+}
+.login {
+margin: 20px auto;
+width: 400px;
+height: 300px;
+}
+.login-screen {
+background-color: #FFF;
+padding: 80px;
+border-radius: 5px
+}
+
+.app {
+text-align: center;
+color: #777;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+
+input {
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 352px;
+transition: border .5s;
+margin-left: -55px;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+.btn {
+border: 2px solid transparent;
+background: #3498DB;
+color: #ffffff;
+font-size: 16px;
+line-height: 25px;
+padding: 10px 0;
+text-decoration: none;
+text-shadow: none;
+border-radius: 3px;
+box-shadow: none;
+transition: 0.25s;
+display: block;
+width: 352px;
+margin: 0 auto;
+margin-left: -55px;
+}
+
+.btn:hover {
+background-color: #2980B9;
+}
+
+.login-link {
+font-size: 12px;
+color: #444;
+display: block;
+margin-top: 12px;
+}
+
+.h1{
+	margin-top: -50px;
+	margin-left: 68px;
+
+}
+
+.txr{
+	margin-left: -20px;
+}
+.lgi{margin-left: 24px;}
+</style>
+<body>
+
+<form action="" method="post">
+<div class="login">
+<div class="login-screen">
+<div class="txr">
+	<h1 class="h1">Welcome</h1>
+ <p class="lgi">logg your to access admin panel.</p>
+ </div>
+<div class="app">
+<h1>Login</h1>
+</div>
+<div class="login-form">
+<div class="control-group">
+                <input type="text" class="login-field" value="" placeholder="username" name="username">
+<label class="login-field-icon fui-user" for="login-name"></label>
+</div>
+<div class="control-group">
+                <input type="password" class="login-field" value="" placeholder="password" name="password">
+<label class="login-field-icon fui-lock" for="login-pass"></label>
+</div>
+<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">
+
+<div class="col-12 text-center">
+    <p> <a href="/forgot" class="text-white-50 ml-1">Forgot your password?</a></p>
+    <p class="text-white-50">Don't have an account? <a href="/register" class="text-white ml-1"><b>Sign Up</b></a></p>
+</div>
+
+</div>
+</div>
+</div>
+</form>
+{% if error %}
+	<p class="error"><strong></strong></p>
+{% endif %}
+
+</body>
+</html>
+
